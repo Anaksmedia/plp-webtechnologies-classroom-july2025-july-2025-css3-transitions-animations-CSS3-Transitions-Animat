@@ -1,0 +1,45 @@
+/* Part 1: CSS3 Transitions and Animations */
+
+/* Button hover effect with transition */
+.animated-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.animated-btn:hover {
+  transform: scale(1.2);
+  background-color: #2ecc71;
+}
+
+/* Box for JS-triggered animation */
+.box {
+  width: 150px;
+  height: 150px;
+  background-color: #e74c3c;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-weight: bold;
+  transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+/* Keyframes for flip animation */
+@keyframes flip {
+  0% { transform: rotateY(0deg); }
+  50% { transform: rotateY(180deg); }
+  100% { transform: rotateY(360deg); }
+}
+
+/* Triggered class for JS */
+.animate {
+  animation: flip 1s forwards;
+  background-color: #9b59b6;
+}
